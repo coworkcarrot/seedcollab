@@ -26,63 +26,146 @@
 
   <!-- font awesome kit -->
   <script src="https://kit.fontawesome.com/ec5d804a17.js" crossorigin="anonymous"></script>
+
+  <!-- swiper slide -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </head>
 <body>
-  <nav>
-    <div class="nav-container">
+  <div class="page-1">
 
-      <div class="nav-logo">
-        <h1 class="menu-logo">
-          <a href="./index.html">
+    <nav>
+      <div class="nav-container">
+  
+        <div class="nav-logo">
+          <h1 class="menu-logo">
+            <a href="./index.html">
+              <img src="./assets/logo.png" alt="포인핸드 로고 이미지">
+            </a>
+          </h1>
+        </div>
+  
+        <div class="nav-menu">
+          <ul class="menu-link">
+            <li>
+              <a href="#">스토어</a>
+            </li>
+            <li>
+              <a href="#">공지사항</a>
+            </li>
+            <li>
+              <a href="#">Q&amp;A</a>
+            </li>
+          </ul>
+        </div>
+          
+        <div class="nav-button">
+          <button class="btn-dnt">
+            <span>후원하기</span>
+            <span class="material-symbols-outlined">
+              <!-- subdirectory_arrow_right -->
+              <img src="./assets/nav-arrow.png" alt="화살표 기호">
+            </span>
+          </button>
+        </div>
+  
+      </div>
+    </nav>
+  
+    <header class="hd">
+      <div class="hd-container">
+  
+        <div class="logo">
             <img src="./assets/logo.png" alt="포인핸드 로고 이미지">
-          </a>
-        </h1>
+        </div>
+  
+        <h2 class="bn-title">
+          기다림의 끝에, 따뜻한 가족이 되어주세요.
+        </h2>
+        <p class="bn-content">연간 10만 마리 유기동물이 버려지고 있습니다.</p>
+        <div class="bn-btn">
+          <button class="btn-antiman"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
+        </div>
+  
       </div>
+    </header>  
 
-      <div class="nav-menu">
-        <ul class="menu-link">
-          <li>
-            <a href="#">스토어</a>
-          </li>
-          <li>
-            <a href="#">공지사항</a>
-          </li>
-          <li>
-            <a href="#">Q&amp;A</a>
-          </li>
-        </ul>
-      </div>
-        
-      <div class="nav-button">
-        <button class="btn-dnt">
-          <span>후원하기</span>
-          <span class="material-symbols-outlined">
-            <!-- subdirectory_arrow_right -->
-            <img src="./assets/nav-arrow.png" alt="화살표 기호">
-          </span>
-        </button>
+  </div>
+  
+  <!-- page-3 -->
+  <section class="page-3">
+    <div class="sec3-container">
+
+      <p class="sec3-h1">
+        이달의 추천 입양 동물
+      </p>
+
+      <aside class="img-container">
+        <figure>
+          <img src="./assets/section3-aside-img-2.jpg" alt="유기동물 이미지">
+        </figure>
+      </aside>
+
+      <div class="profile-list">
+        <div class="swiper-wrapper">
+
+          <ul>
+
+            <li>
+              <a href="#">
+                <div class="profile-content">
+                  <h2>[개] 믹스견</h2>
+                  <p>암컷(중성화 X)</p>
+                  <p>흰색</p>
+                  <p>2024년생(60일미만)</p>
+                  <p>1.1kg</p>
+                </div>
+
+                <div class="profile-img">
+                  <img src="./assets/pawinhand-files/review03.jpg" alt="">
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="profile-content">
+                  <h2>[개] 믹스견</h2>
+                  <p>암컷(중성화 X)</p>
+                  <p>갈색&흰색</p>
+                  <p>2020년생</p>
+                  <p>3kg</p>
+                </div>
+
+                <div class="profile-img">
+                  <img src="./assets/pawinhand-files/review02.jpg" alt="">
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <div class="profile-content">
+                  <h2>[개] 믹스견</h2>
+                  <p>수컷(중성화 X)</p>
+                  <p>검정색</p>
+                  <p>2024년생</p>
+                  <p>6.4kg</p>
+                </div>
+
+                <div class="profile-img">
+                  <img src="./assets/pawinhand-files/story_1734365027771.png" alt="">
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
       </div>
 
     </div>
-  </nav>
-
-  <header class="hd">
-    <div class="hd-container">
-
-      <div class="logo">
-          <img src="./assets/logo.png" alt="포인핸드 로고 이미지">
-      </div>
-
-      <h2 class="bn-title">
-        기다림의 끝에, 따뜻한 가족이 되어주세요.
-      </h2>
-      <p class="bn-content">연간 10만 마리 유기동물이 버려지고 있습니다.</p>
-      <div class="bn-btn">
-        <button class="btn-antiman"><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></button>
-      </div>
-
-    </div>
-  </header>
+  </section>
 
 </body>
 </html>

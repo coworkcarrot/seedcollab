@@ -256,7 +256,9 @@ body .page-1 .hd .hd-container .bn-title, body .page-1 .hd .hd-container .bn-con
   text-shadow: 1.5px 1.5px 1.5px rgba(255, 255, 255, 0.5);
 }
 body .page-1 .hd .hd-container .bn-btn {
-  margin-top: 16rem;
+  position: relative;
+  -webkit-animation: arrow_down 1.5s infinite;
+          animation: arrow_down 1.5s infinite;
 }
 body .page-1 .hd .hd-container .bn-btn .btn-antiman {
   width: 2.5rem;

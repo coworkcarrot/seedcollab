@@ -89,14 +89,12 @@ body .page-1::after {
   z-index: -1;
 }
 body .page-1 nav {
-  width: 100%;
-  height: 5rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
   padding: 0 0.8rem;
-  border-bottom: 1px solid rgba(89, 89, 89, 0.2);
+  border-bottom: 1px solid rgba(130, 130, 130, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -105,9 +103,11 @@ body .page-1 nav .nav-container {
   height: 5rem;
   z-index: 6;
   line-height: 5rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  display: flex;
+  gap: 3rem;
   /* 후원하기 버튼 */
 }
 body .page-1 nav .nav-container .nav-logo,
@@ -116,15 +116,24 @@ body .page-1 nav .nav-container .nav-button {
 }
 body .page-1 nav .nav-container .nav-logo {
   text-align: left;
+  float: left;
+  margin: 0 -5px 0 0;
 }
 body .page-1 nav .nav-container .nav-logo .menu-logo {
   margin: 0 18rem 0 1rem;
+}
+body .page-1 nav .nav-container .nav-logo .menu-logo a {
+  height: 50px;
 }
 body .page-1 nav .nav-container .nav-logo .menu-logo a img {
   height: 3rem;
 }
 body .page-1 nav .nav-container .nav-menu {
-  width: 20%;
+  float: left;
+  width: 28.2rem;
+  display: flex; /* 플렉스 컨테이너 설정 */
+  justify-content: center; /* 가로축 중앙 정렬 */
+  align-items: center; /* 세로축 중앙 정렬 (옵션) */
 }
 body .page-1 nav .nav-container .nav-menu ul.menu-link {
   width: 100%;
@@ -132,15 +141,18 @@ body .page-1 nav .nav-container .nav-menu ul.menu-link {
   justify-content: space-around;
 }
 body .page-1 nav .nav-container .nav-menu ul.menu-link > li {
-  float: left;
   width: auto;
-  height: auto;
-  /* background-color: #ddd; */
-  margin: 0 0.3rem;
+  height: auto; /* 50px 설정 시 아래로 내려감 */
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  gap: 10px;
+  float: left;
+  align-items: center;
+  text-align: center;
 }
 body .page-1 nav .nav-container .nav-menu ul.menu-link > li a {
-  /* background-color: aqua; */
   color: #2F2521;
+  position: relative;
 }
 body .page-1 nav .nav-container .nav-menu ul.menu-link > li a:hover {
   text-decoration: underline;
@@ -148,6 +160,7 @@ body .page-1 nav .nav-container .nav-menu ul.menu-link > li a:hover {
 }
 body .page-1 nav .nav-container .nav-button {
   text-align: right;
+  margin: 1rem 0 1rem 13.5rem;
   /* background: #ddd; */
   width: 40%;
   height: 3rem;
@@ -155,7 +168,6 @@ body .page-1 nav .nav-container .nav-button {
 body .page-1 nav .nav-container .btn-container {
   width: 8rem;
   height: 2.5rem;
-  /* border: 0.1rem solid #2F2521; */
   border-radius: 20px;
   background: #2F2521;
   display: inline-block;
@@ -176,7 +188,6 @@ body .page-1 nav .nav-container .btn {
 body .page-1 nav .nav-container .btn .txt {
   position: relative;
   z-index: 2;
-  /* background: red; */
   display: block;
   line-height: 2.3rem;
   text-align: center;
@@ -224,14 +235,18 @@ body .page-1 nav .nav-container nav .container::after {
 }
 body .page-1 .hd {
   text-align: center;
+  width: 100%;
   height: 942px;
+}
+body .page-1 .hd .hd-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .page-1 .hd .hd-container .logo {
   padding-top: 6.25rem;
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 body .page-1 .hd .hd-container .logo img {
   height: 6rem;
@@ -241,27 +256,27 @@ body .page-1 .hd .hd-container .bn-title, body .page-1 .hd .hd-container .bn-con
   text-shadow: 1.5px 1.5px 1.5px rgba(255, 255, 255, 0.5);
 }
 body .page-1 .hd .hd-container .bn-btn {
-  position: relative;
-  -webkit-animation: arrow_down 1.5s infinite;
-          animation: arrow_down 1.5s infinite;
+  margin-top: 16rem;
 }
 body .page-1 .hd .hd-container .bn-btn .btn-antiman {
   width: 2.5rem;
   height: 3.5rem;
   background-color: rgba(242, 151, 8, 0.75);
-  transition: background-color 0.3s;
-  border-radius: 23px;
+  border-radius: 20px;
   color: #FFF;
   font-size: 1.3rem;
+  text-align: center;
+  -webkit-animation: arrow_down 1.5s infinite;
+          animation: arrow_down 1.5s infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  position: absolute;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 body .page-1 .hd .hd-container .bn-btn .btn-antiman:hover {
   background-color: rgb(209, 133, 1);
   border: 1px solid rgba(243, 211, 157, 0.75);
+  transition: 0.5s;
 }
 body .page-1 #section-1 {
   width: 100%;

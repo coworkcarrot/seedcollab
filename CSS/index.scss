@@ -98,13 +98,14 @@ body {
 
     /* Navigation Styles */
     nav {
-      width: 100%;
-      height: 5rem;
+      // width: 100%;
+      // height: 5rem;
+      // position: -webkit-sticky; 구형 브라우저 지원
       position: sticky;
       top: 0;
       z-index: 5;
       padding: 0 0.8rem;
-      border-bottom: 1px solid rgba(89, 89, 89, 0.2);
+      border-bottom: 1px solid rgba(130, 130, 130, 0.2);
       backdrop-filter: blur(10px);
 
       .nav-container {
@@ -112,10 +113,12 @@ body {
         height: 5rem;
         z-index: 6;
         line-height: 5rem;
-
-        display: flex;
         justify-content: space-between;
         align-items: center;
+
+        position: relative;
+        display: flex;
+        gap: 3rem;
 
         .nav-logo,
         .nav-button {
@@ -124,12 +127,14 @@ body {
 
         .nav-logo {
           text-align: left;
+          float: left;
+          margin: 0 -5px 0 0;
 
           .menu-logo {
             margin: 0 18rem 0 1rem;
 
             a {
-              // height: 50px;
+              height: 50px;
 
               img {
                 height: 3rem;
@@ -139,24 +144,36 @@ body {
         }
 
         .nav-menu {
-          width: 20%;
+          // width: 20%;
+          float: left;
+          width: 28.2rem;
+          // margin: 1rem 0;
+
+          display: flex; /* 플렉스 컨테이너 설정 */
+          justify-content: center; /* 가로축 중앙 정렬 */
+          align-items: center; /* 세로축 중앙 정렬 (옵션) */
+          
+
         
           ul.menu-link {
             width: 100%;
             display: flex;
             justify-content: space-around;
         
-            > li {
-              float: left;
+            & > li {
               width: auto;
-              height: auto;
-        
-              /* background-color: #ddd; */
-              margin: 0 0.3rem;
+              height: auto; /* 50px 설정 시 아래로 내려감 */
+              display: grid;
+              grid-template-columns: repeat(1, 150px);
+              gap: 10px;
+              float: left;
+              align-items: center;
+              text-align: center;     
+            
         
               a {
-                /* background-color: aqua; */
                 color: #2F2521;
+                position: relative;
 
                 &:hover {
                   text-decoration: underline;
@@ -170,6 +187,7 @@ body {
         /* 후원하기 버튼 */
         .nav-button {
           text-align: right;
+          margin: 1rem 0 1rem 13.5rem;
 
           /* background: #ddd; */
           width: 40%;
@@ -179,8 +197,6 @@ body {
         .btn-container {
           width: 8rem;
           height: 2.5rem;
-
-          /* border: 0.1rem solid #2F2521; */
           border-radius: 20px;
           background: #2F2521;
           display: inline-block;
@@ -202,8 +218,6 @@ body {
           .txt {
             position: relative;
             z-index: 2;
-
-            /* background: red; */
             display: block;
             line-height: 2.3rem;
             text-align: center;
@@ -264,15 +278,22 @@ body {
 
     .hd {
       text-align: center;
+      width: 100%;
       height: 942px;
 
       .hd-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .logo {
           padding-top: 6.25rem;
           height: 200px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          
 
           img {
             height: 6rem;
@@ -285,30 +306,26 @@ body {
         }
 
         .bn-btn {
-          // width: 2.5rem;
-          // height: 3.5rem;
-          position: relative;
-          animation: arrow_down 1.5s infinite;
+          // position: relative;
+          // animation: arrow_down 1.5s infinite;
+          margin-top: 16rem;
 
           .btn-antiman {
-            // width: 100%;
-            // height: 100%;
             width: 2.5rem;
             height: 3.5rem;
             background-color: rgba(242, 151, 8, 0.75);
-            transition: background-color 0.3s;
-            border-radius: 23px;
+            border-radius: 20px;
             color: #FFF;
             font-size: 1.3rem;
+            text-align: center;
+            animation: arrow_down 1.5s infinite;
             animation-direction: alternate;
-            animation-delay: 5s;
-            position: absolute;
-            // top: 3rem;
-            // left: 43.7rem;
+            animation-timing-function: linear;
 
             &:hover {
               background-color: rgb(209, 133, 1);
               border: 1px solid rgba(243, 211, 157, 0.75);
+              transition: 0.5s;
             }
           }
         }

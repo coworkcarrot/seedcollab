@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumBarunGothic';
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+/* 나눔바른고딕 */
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+ }
+ 
+
+
+
+/* nav */
+nav {
+  width: 100%;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 99997;
+  background-color: rgba(237, 235, 223, 0.1);
+  padding: 0 0.8rem;
+}
+
+.nav-container {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  z-index: 99998;
+  line-height: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo,
+.nav-button {
+  width: 40%;
+}
+
+.nav-logo {
+  text-align: left;
+}
+
+.nav-logo .menu-logo a img {
+  height: 3rem;
+}
+
+
+/* nav-메뉴 */
+.nav-menu {
+  width: 20%;
+}
+
+.nav-menu ul.menu-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu ul.menu-link > li {
+  float: left;
+  width: auto;
+  height: auto;
+  /* background-color: #ddd; */
+  margin: 0 0.3rem;
+}
+
+.nav-menu ul.menu-link > li a {
+  /* background-color: aqua; */
+  color: #000;
+}
+
+
+/* 후원하기 버튼 */
+.nav-button{
+  text-align: right;
+  /* background: #ddd; */
+  width: 40%;
+  height: 2.5rem;
+}
+
+.btn-container{
+  width: 8rem;
+  height: 2.5rem;
+  /* border: 0.1rem solid #2F2521; */
+  border-radius: 20px;
+  background: #2F2521;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 9;
+
+  position: relative;
+}
+
+.btn{
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  overflow: hidden;
+  width: 7.8rem;
+  height: 2.3rem;
+  background: #2F2521;
+  border-radius: 30px;
+  
+}
+
+.btn .txt{
+  position: relative;
+  z-index: 2;
+  /* background: red; */
+  display: block;
+  line-height: 2.3rem;
+  text-align: center;
+  right: 1rem;
+  color: #FCF6EC;
+  
+  
+}
+
+.btn::before{
+  content: '';
+  display: block;
+  width: 7.8rem;
+  height: 2.3rem;
+  border-radius: 30px;
+  background: #FCF6EC;
+  position: absolute;
+  top: 0rem;
+  left: 8rem;
+  /* left: 80%; */
+  transition: linear .5s;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+.btn-container:hover .btn::before{
+  left: 0rem;
+}
+
+.btn-container:hover .txt{
+  color: #2F2521;
+  font-weight: bold;
+  transition: linear .5s;
+}
+
+.btn .txt .icon{
+  width: 2.3rem;
+  height: 2.3rem;
+  background: #FCF6EC;
+  border-radius: 50%;
+  position: absolute;
+  top: 0rem;
+  left: 6.5rem;
+  z-index: 3;
+}
+
+.btn .txt .icon img{
+  width: 12px;
+}
+
+nav .container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+
+
+
+
+#section-1 {
+  width: 100%;
+  height: 1024px;
+  /* background: url("../assets/banner-3.jpg") no-repeat center;
+  background-size: cover; */
+  background: #F3F3EF;
+
+  position: relative;
+}
+
+#section-1 .slider{
+  width: 100%;
+  height: 1024px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+
+
+.center{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.center .tilt-card {
+  text-align: center;
+}
+
+.center .tilt-card a{
+  display: block;
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  background: #666;
+}
+
+.left {
+  text-align: right;
+}
+
+#section-1 .slider h1 {
+  font-size: 2.5rem;
+}
+
+
+.counter {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  padding-bottom: 12rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
+

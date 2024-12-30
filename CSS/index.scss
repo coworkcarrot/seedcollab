@@ -558,50 +558,76 @@ footer {
   width: 100%;
   height: 340px;
   background: #3A302C;
+  /* background: #2F2521; */
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   padding: 2.5rem;
   box-sizing: border-box;
-  
+
 }
 
-footer p, footer a, footer b, footer h4 {
-  color: #fff;
+footer p,
+footer .f-nav li a,
+footer b,
+footer h4 {
+  color: #eae1dd;
 }
 
 .footer-logo img {
   width: 300px;
 }
 
-.footer-logo p.txt{
+.footer-logo p.txt {
   margin: 30px 0 60px 0;
   line-height: 1.5;
+
 }
 
-.footer-logo p.copyright{
+.footer-logo p.copyright {
   font-size: 0.8rem;
+
 }
 
-footer nav.f-nav ul li{
+footer nav.f-nav ul li {
   margin-bottom: 10px;
 }
 
-.footer-right h4{
+.footer-right h4 {
+  margin-bottom: 10px;
+
+}
+
+.footer-right p {
   margin-bottom: 10px;
 }
 
-.footer-right .email {
-  margin-bottom: 50px;
+.footer-right .number {
+  margin-bottom: 40px;
 }
 
-.footer-right a{
+.footer-right a {
   margin-right: 10px;
+
+  display: inline-block;
 }
 
 .footer-right img {
   width: 30px;
 }
 
+/* top버튼 */
+
+#top-btn {
+  position: fixed;
+  bottom: 3rem;
+  right: 2.5rem;
+  z-index: 500;
+}
+
+#top-btn i {
+  color: #EB9C00;
+  font-size: 1.5rem;
+}
 }
   
 

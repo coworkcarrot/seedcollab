@@ -440,42 +440,80 @@ body #section-3 .navigation .navigation-scrollbar {
   background: #000;
   margin-top: 3rem;
 }
+/* footer */
 body footer {
   width: 100%;
   height: 340px;
   background: #3A302C;
+  /* background: #2F2521; */
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   padding: 2.5rem;
   box-sizing: border-box;
+
 }
-body footer p, body footer a, body footer b, body footer h4 {
-  color: #fff;
+
+body footer p,
+body footer .f-nav li a,
+body footer b,
+body footer h4 {
+  color: #eae1dd;
 }
+
 body .footer-logo img {
   width: 300px;
 }
+
 body .footer-logo p.txt {
   margin: 30px 0 60px 0;
   line-height: 1.5;
+
 }
+
 body .footer-logo p.copyright {
   font-size: 0.8rem;
+
 }
+
 body footer nav.f-nav ul li {
   margin-bottom: 10px;
 }
+
 body .footer-right h4 {
   margin-bottom: 10px;
+
 }
-body .footer-right .email {
-  margin-bottom: 50px;
+
+body .footer-right p {
+  margin-bottom: 10px;
 }
+
+body .footer-right .number {
+  margin-bottom: 40px;
+}
+
 body .footer-right a {
   margin-right: 10px;
+
+  display: inline-block;
 }
+
 body .footer-right img {
   width: 30px;
+}
+
+/* top버튼 */
+
+#top-btn {
+  position: fixed;
+  bottom: 3rem;
+  right: 2.5rem;
+  z-index: 500;
+}
+
+#top-btn i {
+  color: #EB9C00;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

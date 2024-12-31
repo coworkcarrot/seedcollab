@@ -37,44 +37,48 @@
 
 <body>
 
-  <!-- page-1 -->
-  <div class="page-1">
+
+
+
+  <div id="wrap">
 
     <nav>
       <div class="nav-container">
+        <div class="nav-inner">
 
-        <div class="nav-logo">
-          <h1 class="menu-logo">
-            <a href="./index.html">
-              <img src="./assets/logo.png" alt="포인핸드 로고 이미지">
-            </a>
-          </h1>
-        </div>
-
-        <div class="nav-menu">
-          <ul class="menu-link">
-            <li>
-              <a href="#">스토어</a>
-            </li>
-            <li>
-              <a href="#">공지사항</a>
-            </li>
-            <li>
-              <a href="#">Q&amp;A</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="nav-button">
-          <div class="btn-container">
-            <div class="btn">
-              <a href="#">
-                <span class="txt">후원하기
-                  <span class="icon">
-                    <img src="assets/nav-arrow.png">
-                  </span>
-                </span>
+          <div class="nav-logo">
+            <h1 class="menu-logo">
+              <a href="./index.html">
+                <img src="./assets/logo.png" alt="포인핸드 로고 이미지">
               </a>
+            </h1>
+          </div>
+
+          <div class="nav-menu">
+            <ul class="menu-link">
+              <li>
+                <a href="#">스토어</a>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a href="#">Q&amp;A</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav-button">
+            <div class="btn-container">
+              <div class="btn">
+                <a href="#">
+                  <span class="txt">후원하기
+                    <span class="icon">
+                      <img src="assets/nav-arrow.png">
+                    </span>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -82,9 +86,9 @@
       </div>
     </nav>
 
-    <header class="hd">
+    <!-- page-1 -->
+    <header id="page-1">
       <div class="hd-container">
-
         <div class="logo">
           <img src="./assets/logo.png" alt="포인핸드 로고 이미지">
         </div>
@@ -93,17 +97,20 @@
           기다림의 끝에, 따뜻한 가족이 되어주세요.
         </h2>
         <p class="bn-content">연간 10만 마리 유기동물이 버려지고 있습니다.</p>
-        <div class="bn-btn">
-          <button class="btn-antiman">
-            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
-          </button>
-        </div>
 
+        <div class="bn">
+          <div class="bn-btn">
+            <button class="btn-antiman">
+              <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
+
     <!-- page-2 -->
-    <section id="section-1">
+    <section id="page-2">
 
       <div class="slider">
 
@@ -157,184 +164,189 @@
       </div>
 
     </section>
-  </div>
 
-  <!-- page-3 -->
-  <section class="page-3">
-    <div class="sec3-container">
 
-      <p class="sec3-h1">
-        이달의 추천 입양 동물
-      </p>
+    <!-- page-3 -->
+    <section id="page-3">
 
-      <aside class="img-container">
-        <figure>
-          <img src="./assets/section3-aside-img-2.jpg" alt="유기동물 이미지">
-        </figure>
-      </aside>
 
-      <div class="profile-list">
-        <div class="swiper-wrapper">
+      <div class="page-3-tit">
+        <p class="sec3-h1">
+          이달의 추천 입양 동물
+        </p>
+      </div>
 
+      <div class="sec3-container">
+
+        <aside class="img-container">
+          <figure>
+            <img src="./assets/section3-aside-img-2.jpg" alt="유기동물 이미지">
+          </figure>
+        </aside>
+
+        <div class="profile-list">
+          <div class="swiper-wrapper">
+
+            <ul>
+
+              <li>
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>암컷(중성화 X)</p>
+                    <p>흰색</p>
+                    <p>2024년생(60일미만)</p>
+                    <p>1.1kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/pawinhand-files/review03.jpg" alt="">
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>암컷(중성화 X)</p>
+                    <p>갈색&흰색</p>
+                    <p>2020년생</p>
+                    <p>3kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/pawinhand-files/review02.jpg" alt="">
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>수컷(중성화 X)</p>
+                    <p>검정색</p>
+                    <p>2024년생</p>
+                    <p>6.4kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/pawinhand-files/story_1734365027771.png" alt="">
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- page-4 -->
+    <section id="page-4">
+
+      <div class="container">
+
+        <h1 class="txt"><b>유기동물</b>을 <b>입양</b>하는 <b>방법</b>에 대해 알려드릴게요 :) </h1>
+
+        <div class="swiper-container">
+          <div class="swiper-procedures">
+            <div class="procedures-1">
+              <P class="icon"><img src="assets/page4-icon1.png" alt=""></P>
+              <h2>보호동물 확인</h2>
+              <p class="txt">
+                PC 또는 포인핸드 어플에서<br>
+                보호동물 정보 확인
+              </p>
+            </div>
+
+            <div class="procedures-2">
+              <P class="icon"><img src="assets/page4-icon2.png" alt=""></P>
+              <h2>입양문의</h2>
+              <p class="txt">
+                보호소 방문 전, 공고번호 확인 후<br>
+                보호소에 전화 문의 및 방문일정 예약
+              </p>
+            </div>
+
+            <div class="procedures-3">
+              <P class="icon"><img src="assets/page4-icon3.png" alt=""></P>
+              <h2>보호소 방문</h2>
+              <p class="txt">
+                예약한 날짜에 방문하여 입양 상담 및<br>
+                신청하기
+              </p>
+            </div>
+
+            <div class="procedures-4">
+              <P class="icon"><img src="assets/page4-icon4.png" alt=""></P>
+
+              <h2>입양 계약서 작성</h2>
+              <p class="txt">
+                입양 계약서까지 작성하면<br>
+                입양 절차 완료!
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+        <button class="procedures-btn"><a href="#">자세히보기</a></button>
+      </div>
+
+
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-logo">
+        <h1 class="logo"><a href="#"><img src="assets/logo.png" alt=""></a></h1>
+
+        <p class="txt">
+          Adopt Animals, Adopt Family<br>
+          포인핸드는 사지 않고 입양하는 문화를 만듭니다.
+        </p>
+
+        <p class="copyright">
+          Copyright &copy; 2024-2025 Coworkcarrot. All rights 2025 reserved
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <nav class="f-nav">
           <ul>
-
-            <li>
-              <a href="#">
-                <div class="profile-content">
-                  <h2>[개] 믹스견</h2>
-                  <p>암컷(중성화 X)</p>
-                  <p>흰색</p>
-                  <p>2024년생(60일미만)</p>
-                  <p>1.1kg</p>
-                </div>
-
-                <div class="profile-img">
-                  <img src="./assets/pawinhand-files/review03.jpg" alt="">
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <div class="profile-content">
-                  <h2>[개] 믹스견</h2>
-                  <p>암컷(중성화 X)</p>
-                  <p>갈색&흰색</p>
-                  <p>2020년생</p>
-                  <p>3kg</p>
-                </div>
-
-                <div class="profile-img">
-                  <img src="./assets/pawinhand-files/review02.jpg" alt="">
-                </div>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <div class="profile-content">
-                  <h2>[개] 믹스견</h2>
-                  <p>수컷(중성화 X)</p>
-                  <p>검정색</p>
-                  <p>2024년생</p>
-                  <p>6.4kg</p>
-                </div>
-
-                <div class="profile-img">
-                  <img src="./assets/pawinhand-files/story_1734365027771.png" alt="">
-                </div>
-              </a>
-            </li>
-
+            <li><a href="#">포인핸드 소개</a></li>
+            <li><a href="#">입양절차</a></li>
+            <li><a href="#">보호동물</a></li>
+            <li><a href="#">입양후기</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">Q&A</a></li>
           </ul>
-
-        </div>
+        </nav>
       </div>
 
-    </div>
-  </section>
+      <div class="footer-right">
+        <h4>Contact Us</h4>
+        <p class="email">pawinhand@naver.com</p>
+        <p class="number">02-6956-6242</p>
 
-  <!-- page-4 입양절차 -->
-  <section id="section-3">
-
-    <div class="container">
-
-      <h1 class="txt"><b>유기동물</b>을 <b>입양</b>하는 <b>방법</b>에 대해 알려드릴게요 :) </h1>
-
-      <div class="swiper-container">
-        <div class="swiper-procedures">
-          <div class="procedures-1">
-            <P class="icon"><img src="assets/page4-icon1.png" alt=""></P>
-            <h2>보호동물 확인</h2>
-            <p class="txt">
-              PC 또는 포인핸드 어플에서<br>
-              보호동물 정보 확인
-            </p>
-          </div>
-
-          <div class="procedures-2">
-            <P class="icon"><img src="assets/page4-icon2.png" alt=""></P>
-            <h2>입양문의</h2>
-            <p class="txt">
-              보호소 방문 전, 공고번호 확인 후<br>
-              보호소에 전화 문의 및 방문일정 예약
-            </p>
-          </div>
-
-          <div class="procedures-3">
-            <P class="icon"><img src="assets/page4-icon3.png" alt=""></P>
-            <h2>보호소 방문</h2>
-            <p class="txt">
-              예약한 날짜에 방문하여 입양 상담 및<br>
-              신청하기
-            </p>
-          </div>
-
-          <div class="procedures-4">
-            <P class="icon"><img src="assets/page4-icon4.png" alt=""></P>
-
-            <h2>입양 계약서 작성</h2>
-            <p class="txt">
-              입양 계약서까지 작성하면<br>
-              입양 절차 완료!
-            </p>
-          </div>
-        </div>
-
-        <div class="navigation">
-          <div class="navigation-scrollbar">
-            <div class="navigation-scrollbar-drag"></div>
-          </div>
-        </div>
+        <h4>SNS</h4>
+        <P class="icon-instagram">
+          <a href="https://www.instagram.com/pawinhand_official/" target="_blank"><img src="assets/instgram-logo.png"
+              alt=""></a>
+          <a href="https://blog.naver.com/pawinhand" target="_blank"><img src="assets/naver-logo.png" alt=""></a>
+        </P>
       </div>
+    </footer>
+
+    <!-- top 버튼 -->
+    <div id="top-btn">
+      <a href="#"><i class="fa-solid fa-angles-up"></i></a>
     </div>
 
-  </section>
-
-  <footer>
-    <div class="footer-logo">
-      <h1 class="logo"><a href="#"><img src="assets/logo.png" alt=""></a></h1>
-
-      <p class="txt">
-        Adopt Animals, Adopt Family<br>
-        포인핸드는 사지 않고 입양하는 문화를 만듭니다.
-      </p>
-
-      <p class="copyright">
-        Copyright &copy; 2024-2025 Coworkcarrot. All rights 2025 reserved
-      </p>
-    </div>
-
-    <div class="footer-nav">
-      <nav class="f-nav">
-        <ul>
-          <li><a href="#">포인핸드 소개</a></li>
-          <li><a href="#">입양절차</a></li>
-          <li><a href="#">보호동물</a></li>
-          <li><a href="#">입양후기</a></li>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">Q&A</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="footer-right">
-      <h4>Contact Us</h4>
-      <p class="email">pawinhand@naver.com</p>
-      <p class="number">02-6956-6242</p>
-
-      <h4>SNS</h4>
-      <P class="icon-instagram">
-        <a href="https://www.instagram.com/pawinhand_official/" target="_blank"><img src="assets/instgram-logo.png"
-            alt=""></a>
-        <a href="https://blog.naver.com/pawinhand" target="_blank"><img src="assets/naver-logo.png" alt=""></a>
-      </P>
-    </div>
-  </footer>
-
-  <!-- top 버튼 -->
-  <div id="top-btn">
-    <a href="#"><i class="fa-solid fa-angles-up"></i></a>
   </div>
 
 </body>

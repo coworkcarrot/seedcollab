@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Font Declaration */
 @font-face {
   font-family: "NanumBarunGothic";
@@ -8,33 +7,24 @@
   src: url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
   src: url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
 }
-
 /* Font Variables */
 /* Page-1 arrow down */
 @-webkit-keyframes arrow_down {
-
-  0%,
-  100% {
+  0%, 100% {
     top: 0rem;
   }
-
   50% {
     top: 0.5rem;
   }
 }
-
 @keyframes arrow_down {
-
-  0%,
-  100% {
+  0%, 100% {
     top: 0rem;
   }
-
   50% {
     top: 0.5rem;
   }
 }
-
 /* Common Styles */
 * {
   box-sizing: border-box;
@@ -44,8 +34,7 @@
   scroll-behavior: smooth;
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -64,7 +53,6 @@ button {
 img {
   vertical-align: middle;
 }
-
 
 #wrap {
   width: 100%;
@@ -87,71 +75,50 @@ nav .nav-container {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 } */
-
 nav {
-  position: -webkit-sticky;
+  -webkit-position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
 }
-
 nav .nav-container {
+  display: flex;
   position: absolute;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 5rem;
   padding: 0 0.8rem;
   border-bottom: 1px solid rgba(130, 130, 130, 0.2);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-
-
-nav .nav-inner {
-  width: 100%;
-  height: 5rem;
-  z-index: 6;
-  /* line-height: 5rem; */
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  display: flex;
-  /* gap: 3rem; */
-  /* 후원하기 버튼 */
-}
-
-nav .nav-inner .nav-logo,
-nav .nav-inner .nav-button {
+nav .nav-logo, nav .nav-button {
   width: 35%;
 }
-
-nav .nav-inner .nav-logo .menu-logo a {
+nav .nav-logo .menu-logo a {
   height: 50px;
 }
-
-nav .nav-inner .nav-logo .menu-logo a img {
+nav .nav-logo .menu-logo a img {
   height: 3rem;
 }
-
-nav .nav-inner .nav-menu {
+nav .nav-menu {
   width: 30%;
 }
-
-nav .nav-inner .nav-menu ul.menu-link {
+nav .nav-menu ul.menu-link {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
-nav .nav-inner .nav-menu ul.menu-link>li>a {
+nav .nav-menu ul.menu-link > li > a {
   color: #2F2521;
   position: relative;
   display: inline-block;
 }
-
-nav .nav-inner ul.menu-link>li>a:hover {
+nav ul.menu-link > li > a:hover {
   text-decoration: none;
 }
-
-nav .nav-inner ul.menu-link>li>a:after {
+nav ul.menu-link > li > a:after {
   content: "";
   position: relative;
   display: block;
@@ -162,21 +129,19 @@ nav .nav-inner ul.menu-link>li>a:after {
   transform: scaleX(0);
   transform-origin: 100% 0;
   /* transform-origin: 0 0; */
-  transition: transform .3s cubic-bezier(.45, .46, .05, .96);
+  transition: transform 0.3s cubic-bezier(0.45, 0.46, 0.05, 0.96);
 }
-
-nav .nav-inner ul.menu-link>li>a:hover:after {
+nav ul.menu-link > li > a:hover:after {
   transform: scaleX(1);
   transform-origin: 0 0;
-  transition: transform .5s cubic-bezier(.45, .46, .05, .96);
+  transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
 }
 
-nav .nav-button {
+.nav-button {
   text-align: right;
   height: 5rem;
 }
-
-nav .nav-button .btn-container {
+.nav-button .btn-container {
   width: 8rem;
   height: 2.5rem;
   border-radius: 20px;
@@ -188,7 +153,7 @@ nav .nav-button .btn-container {
   position: relative;
 }
 
-nav .nav-container .btn {
+.nav-container .btn {
   position: absolute;
   top: 0.1rem;
   left: 0.1rem;
@@ -198,8 +163,7 @@ nav .nav-container .btn {
   background: #2F2521;
   border-radius: 30px;
 }
-
-nav .nav-container .btn .txt {
+.nav-container .btn .txt {
   position: relative;
   z-index: 2;
   display: block;
@@ -208,8 +172,7 @@ nav .nav-container .btn .txt {
   right: 1rem;
   color: #FCF6EC;
 }
-
-nav .nav-container .btn::before {
+.nav-container .btn::before {
   content: "";
   display: block;
   width: 7.8rem;
@@ -223,17 +186,16 @@ nav .nav-container .btn::before {
   z-index: 1;
 }
 
-nav .btn-container:hover .btn::before {
+.btn-container:hover .btn::before {
   left: 0;
 }
-
-nav .btn-container:hover .txt {
+.btn-container:hover .txt {
   color: #2F2521;
   font-weight: bold;
   transition: linear 0.5s;
 }
 
-nav .nav-container .btn .txt .icon {
+.nav-container .btn .txt .icon {
   width: 2.3rem;
   height: 2.3rem;
   background: #FCF6EC;
@@ -243,24 +205,20 @@ nav .nav-container .btn .txt .icon {
   left: 6.5rem;
   z-index: 3;
 }
-
-nav .nav-container .btn .txt .icon img {
+.nav-container .btn .txt .icon img {
   width: 12px;
 }
-
-nav .nav-container .btn::after {
+.nav-container .btn::after {
   content: "";
   display: block;
   clear: both;
 }
-
 
 /* page1 영역 */
 #page-1 {
   width: 100%;
   height: 100dvh;
 }
-
 #page-1 .hd-container {
   width: 100%;
   height: 100%;
@@ -270,7 +228,6 @@ nav .nav-container .btn::after {
   flex-direction: column;
   align-items: center;
 }
-
 #page-1 .hd-container::after {
   background: url("../assets/banner-3.jpg");
   background-size: cover;
@@ -285,41 +242,35 @@ nav .nav-container .btn::after {
   left: 0;
   z-index: -1;
 }
-
-
 #page-1 .hd-container .logo {
   /* padding-top: 6.25rem;
   height: 200px; */
   position: absolute;
   top: 25%;
 }
-
 #page-1 .hd-container .logo img {
   height: 6rem;
 }
-
-#page-1 .hd-container .bn-title,
-#page-1 .hd-container .bn-content {
+#page-1 .hd-container .bn-title {
   text-shadow: 1.5px 1.5px 1.5px rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 45%;
 }
-
 #page-1 .hd-container .bn-content {
+  text-shadow: 1.5px 1.5px 1.5px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 45%;
   top: 50%;
 }
-
 #page-1 .hd-container .bn {
   position: absolute;
   top: 85%;
 }
-
 #page-1 .hd-container .bn-btn {
   position: relative;
   -webkit-animation: arrow_down 1.5s infinite;
   animation: arrow_down 1.5s infinite;
 }
-
 #page-1 .hd-container .bn-btn .btn-antiman {
   width: 2.5rem;
   height: 3.5rem;
@@ -335,13 +286,11 @@ nav .nav-container .btn::after {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
-
 #page-1 .hd-container .bn-btn .btn-antiman:hover {
   background-color: rgb(209, 133, 1);
   border: 1px solid rgba(243, 211, 157, 0.75);
   transition: 0.5s;
 }
-
 
 /* page-2영역 */
 #page-2 {
@@ -351,7 +300,6 @@ nav .nav-container .btn::after {
   background: #F3F3EF;
   position: relative;
 }
-
 #page-2 .slider {
   width: 100%;
   height: 100%;
@@ -359,17 +307,14 @@ nav .nav-container .btn::after {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
-
 #page-2 .center {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 #page-2 .center .tilt-card {
   text-align: center;
 }
-
 #page-2 .center .tilt-card a {
   display: block;
   width: 350px;
@@ -377,15 +322,12 @@ nav .nav-container .btn::after {
   border-radius: 20px;
   background: #666;
 }
-
 #page-2 .left {
   text-align: right;
 }
-
 #page-2 .slider h1 {
   font-size: 2.5rem;
 }
-
 #page-2 .counter {
   position: absolute;
   bottom: 10%;
@@ -401,29 +343,25 @@ nav .nav-container .btn::after {
 
 /* page3 영역 */
 #page-3 {
-  width: 70%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
 }
-
 #page-3 .page-3-tit {
   width: 80%;
   height: auto;
   margin-top: 8rem;
 }
-
 #page-3 .page-3-tit .sec3-h1 {
   font-size: 50px;
   color: rgba(34, 34, 34, 0.8);
 }
-
 #page-3 .sec3-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 8rem 0;
 }
-
 #page-3 .img-container figure img {
   width: 482px;
   height: 570px;
@@ -431,13 +369,11 @@ nav .nav-container .btn::after {
   -o-object-fit: cover;
   object-fit: cover;
 }
-
 #page-3 .profile-list .swiper-wrapper ul {
   display: grid;
   row-gap: 3.5rem;
   align-items: right;
 }
-
 #page-3 .profile-list .swiper-wrapper ul li {
   width: 587px;
   height: 254px;
@@ -446,7 +382,6 @@ nav .nav-container .btn::after {
   padding: 40px;
   border-radius: 25px;
 }
-
 #page-3 .profile-list .swiper-wrapper ul li .profile-content {
   float: left;
   display: grid;
@@ -454,21 +389,17 @@ nav .nav-container .btn::after {
   gap: 5px;
   margin-left: 5rem;
 }
-
 #page-3 .profile-list .swiper-wrapper ul li .profile-content h2 {
   margin: 1rem 0;
 }
-
 #page-3 .profile-list .swiper-wrapper ul li .profile-img {
   display: flex;
   justify-content: center;
 }
-
 #page-3 .profile-list .swiper-wrapper ul li .profile-img img {
   width: 175px;
   border-radius: 25px;
 }
-
 
 /* page4 영역 */
 #page-4 {
@@ -477,7 +408,6 @@ nav .nav-container .btn::after {
   background: #F3F3EF;
   /*구분 지으려고 임의로 배경색 지정한 것*/
 }
-
 #page-4 .container {
   width: 100%;
   height: 100%;
@@ -486,17 +416,14 @@ nav .nav-container .btn::after {
   justify-items: center;
   align-content: space-evenly;
 }
-
 #page-4 .container h1 {
   font-size: 30px;
   font-weight: normal;
 }
-
 #page-4 .swiper-container {
   width: 100%;
   height: 100%;
 }
-
 #page-4 .swiper-procedures {
   width: 70%;
   height: 300px;
@@ -504,11 +431,7 @@ nav .nav-container .btn::after {
   justify-content: space-between;
   margin: 0 auto;
 }
-
-#page-4 .swiper-procedures .procedures-1,
-#page-4 .swiper-procedures .procedures-2,
-#page-4 .swiper-procedures .procedures-3,
-#page-4 .swiper-procedures .procedures-4 {
+#page-4 .swiper-procedures .procedures-1, #page-4 .swiper-procedures .procedures-2, #page-4 .swiper-procedures .procedures-3, #page-4 .swiper-procedures .procedures-4 {
   width: 300px;
   height: 300px;
   border: 1px solid #E1E0DB;
@@ -520,18 +443,15 @@ nav .nav-container .btn::after {
   justify-content: space-evenly;
   align-items: center;
 }
-
 #page-4 .swiper-procedures h2 {
   color: #F19802;
   font-size: 20px;
 }
-
 #page-4 .swiper-procedures p.txt {
   text-align: center;
   font-size: 1rem;
   line-height: 1.3;
 }
-
 #page-4 .procedures-btn {
   width: 200px;
   height: 50px;
@@ -539,7 +459,6 @@ nav .nav-container .btn::after {
   border-radius: 30px;
   text-align: center;
 }
-
 #page-4 .procedures-btn a {
   font-size: 1rem;
 }
@@ -554,71 +473,51 @@ footer {
   grid-template-columns: 3fr 1fr 1fr;
   padding: 2.5rem;
   box-sizing: border-box;
-
 }
-
-footer p,
-footer .f-nav li a,
-footer b,
-footer h4 {
+footer p, footer .f-nav li a, footer b, footer h4 {
   color: #eae1dd;
 }
 
 .footer-logo img {
   width: 300px;
 }
-
 .footer-logo p.txt {
   margin: 30px 0 60px 0;
   line-height: 1.5;
-
 }
-
 .footer-logo p.copyright {
   font-size: 0.8rem;
-
 }
 
 footer .footer-nav .f-nav ul li {
   margin-bottom: 10px;
 }
 
-.footer-right h4 {
-  margin-bottom: 10px;
-
-}
-
-.footer-right p {
+.footer-right h4, .footer-right p {
   margin-bottom: 10px;
 }
-
 .footer-right .number {
   margin-bottom: 40px;
 }
-
 .footer-right a {
   margin-right: 10px;
-
   display: inline-block;
 }
-
 .footer-right img {
   width: 30px;
 }
 
 /* top버튼 */
-
 #top-btn {
   position: fixed;
   bottom: 3rem;
   right: 2.5rem;
   z-index: 500;
 }
-
 #top-btn i {
   color: #EB9C00;
   font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

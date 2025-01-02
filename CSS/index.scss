@@ -88,33 +88,23 @@ nav .nav-container {
 } */
 
 nav {
-  position: -webkit-sticky;
+  -webkit-position: sticky;
   position: sticky;
   top: 0;
   z-index: 5;
 
   .nav-container {
+    display: flex;
     position: absolute;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 5rem;
     padding: 0 0.8rem;
     border-bottom: 1px solid rgba(130, 130, 130, 0.2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
-
-  .nav-inner {
-    width: 100%;
-    height: 5rem;
-    z-index: 6;
-
-    /* line-height: 5rem; */
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    display: flex;
-
-    /* gap: 3rem; */
-    /* 후원하기 버튼 */
 
     .nav-logo, .nav-button {
       width: 35%;
@@ -157,7 +147,9 @@ nav {
         width: 100%;
         height: 1px;
         background-color: #2F2521;
+        -webkit-transform: scaleX(0);
         transform: scaleX(0);
+        -webkit-transform-origin: 100% 0;
         transform-origin: 100% 0;
 
         /* transform-origin: 0 0; */
@@ -165,8 +157,11 @@ nav {
       }
 
       &:hover:after {
+        -webkit-transform: scaleX(1);
         transform: scaleX(1);
+        -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
+        -webkit-transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
         transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
       }
     }
@@ -258,7 +253,6 @@ nav {
       clear: both;
     }
   }
-}
 
 /* page1 영역 */
 
@@ -410,7 +404,7 @@ nav {
 /* page3 영역 */
 
 #page-3 {
-  width: 70%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
 

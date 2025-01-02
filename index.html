@@ -14,6 +14,9 @@
 
   <link rel="stylesheet" href="./CSS/index.css">
 
+  <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <!-- favicon -->
   <link rel="shortcut icon" href="./assets/favicon.png">
 
@@ -28,8 +31,8 @@
   <!-- font awesome kit -->
   <script src="https://kit.fontawesome.com/ec5d804a17.js" crossorigin="anonymous"></script>
 
-  <!-- swiper slide -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script defer src="./JS/index.js"></script>
 
@@ -183,57 +186,67 @@
         </aside>
 
         <div class="profile-list">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+          space-between="30" free-mode="true">
 
             <ul>
 
-              <li>
-                <a href="#">
-                  <div class="profile-content">
-                    <h2>[개] 믹스견</h2>
-                    <p>암컷(중성화 X)</p>
-                    <p>흰색</p>
-                    <p>2024년생(60일미만)</p>
-                    <p>1.1kg</p>
-                  </div>
+              <div class="swiper-slide">
+                <li>
+                  <a href="#">
+                    <div class="profile-content">
+                      <h2>[개] 믹스견</h2>
+                      <p>암컷(중성화 X)</p>
+                      <p>흰색</p>
+                      <p>2024년생(60일미만)</p>
+                      <p>1.1kg</p>
+                    </div>
+  
+                    <div class="profile-img">
+                      <img src="./assets/pawinhand-files/review03.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+              </div>
+              
 
-                  <div class="profile-img">
-                    <img src="./assets/pawinhand-files/review03.jpg" alt="">
-                  </div>
-                </a>
-              </li>
+              <div class="swiper-slide">
+                <li>
+                  <a href="#">
+                    <div class="profile-content">
+                      <h2>[개] 믹스견</h2>
+                      <p>암컷(중성화 X)</p>
+                      <p>갈색&흰색</p>
+                      <p>2020년생</p>
+                      <p>3kg</p>
+                    </div>
+  
+                    <div class="profile-img">
+                      <img src="./assets/pawinhand-files/review02.jpg" alt="">
+                    </div>
+                  </a>
+                </li>
+              </div>
+              
 
-              <li>
-                <a href="#">
-                  <div class="profile-content">
-                    <h2>[개] 믹스견</h2>
-                    <p>암컷(중성화 X)</p>
-                    <p>갈색&흰색</p>
-                    <p>2020년생</p>
-                    <p>3kg</p>
-                  </div>
-
-                  <div class="profile-img">
-                    <img src="./assets/pawinhand-files/review02.jpg" alt="">
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  <div class="profile-content">
-                    <h2>[개] 믹스견</h2>
-                    <p>수컷(중성화 X)</p>
-                    <p>검정색</p>
-                    <p>2024년생</p>
-                    <p>6.4kg</p>
-                  </div>
-
-                  <div class="profile-img">
-                    <img src="./assets/pawinhand-files/story_1734365027771.png" alt="">
-                  </div>
-                </a>
-              </li>
+              <div class="swiper-slide">
+                <li>
+                  <a href="#">
+                    <div class="profile-content">
+                      <h2>[개] 믹스견</h2>
+                      <p>수컷(중성화 X)</p>
+                      <p>검정색</p>
+                      <p>2024년생</p>
+                      <p>6.4kg</p>
+                    </div>
+  
+                    <div class="profile-img">
+                      <img src="./assets/pawinhand-files/story_1734365027771.png" alt="">
+                    </div>
+                  </a>
+                </li>
+              </div>
+              
 
             </ul>
 

@@ -9,14 +9,6 @@
 }
 /* Font Variables */
 /* Page-1 arrow down */
-@-webkit-keyframes arrow_down {
-  0%, 100% {
-    top: 0rem;
-  }
-  50% {
-    top: 0.5rem;
-  }
-}
 @keyframes arrow_down {
   0%, 100% {
     top: 0rem;
@@ -76,7 +68,6 @@ nav .nav-container {
   backdrop-filter: blur(10px);
 } */
 nav {
-  -webkit-position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -268,7 +259,6 @@ nav ul.menu-link > li > a:hover:after {
 }
 #page-1 .hd-container .bn-btn {
   position: relative;
-  -webkit-animation: arrow_down 1.5s infinite;
   animation: arrow_down 1.5s infinite;
 }
 #page-1 .hd-container .bn-btn .btn-antiman {
@@ -279,11 +269,8 @@ nav ul.menu-link > li > a:hover:after {
   color: #FFF;
   font-size: 1.3rem;
   text-align: center;
-  -webkit-animation: arrow_down 1.5s infinite;
   animation: arrow_down 1.5s infinite;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 #page-1 .hd-container .bn-btn .btn-antiman:hover {
@@ -304,8 +291,9 @@ nav ul.menu-link > li > a:hover:after {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  justify-items: center;
 }
 #page-2 .center {
   width: 100%;
@@ -321,6 +309,11 @@ nav ul.menu-link > li > a:hover:after {
   height: 400px;
   border-radius: 20px;
   background: #666;
+}
+#page-2 .left, #page-2 .right {
+  width: 300px;
+  height: auto;
+  /* left right에 가로값을 추가해서 간격 맞춤 */
 }
 #page-2 .left {
   text-align: right;
@@ -404,7 +397,7 @@ nav ul.menu-link > li > a:hover:after {
 /* page4 영역 */
 #page-4 {
   width: 100%;
-  height: 800px;
+  height: 100dvh;
   background: #F3F3EF;
   /*구분 지으려고 임의로 배경색 지정한 것*/
 }
@@ -414,6 +407,7 @@ nav ul.menu-link > li > a:hover:after {
   /* background: #888; */
   display: grid;
   justify-items: center;
+  justify-content: center;
   align-content: space-evenly;
 }
 #page-4 .container h1 {
@@ -425,7 +419,7 @@ nav ul.menu-link > li > a:hover:after {
   height: 100%;
 }
 #page-4 .swiper-procedures {
-  width: 70%;
+  width: 100%;
   height: 300px;
   display: flex;
   justify-content: space-between;
@@ -437,7 +431,7 @@ nav ul.menu-link > li > a:hover:after {
   border: 1px solid #E1E0DB;
   border-radius: 20px;
   background: #fff;
-  /* margin: 0 3rem; */
+  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -519,5 +513,6 @@ footer .footer-nav .f-nav ul li {
   font-size: 1.5rem;
 }
 
+
+
 /*# sourceMappingURL=index.css.map */
-/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

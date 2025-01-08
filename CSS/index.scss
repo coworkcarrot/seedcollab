@@ -410,68 +410,81 @@ nav {
   margin: 0 auto;
 
   .page-3-tit {
-    width: 80%;
-    height: auto;
-    margin-top: 8rem;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
 
     .sec3-h1 {
       font-size: 50px;
-      color: rgba(34, 34, 34, 0.8);
+      color: rgba(34, 34, 34, 0.8); /* 추후 변경 */
     }
   }
 
   .sec3-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 8rem 0;
-  }
-
-  .img-container figure img {
-    width: 482px;
-    height: 570px;
-    border-radius: 25px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-
-  .profile-list .swiper-wrapper ul {
     display: grid;
-    row-gap: 3.5rem;
-    align-items: right;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 100px 0;
+    
+    .img-wrapper {
+      /* .img-container sticky 적용을 위한 레이아웃 */
 
-    li {
-      width: 587px;
-      height: 254px;
-      background-color: #F5F3ED;
-      border: 1px solid #E1E0DB;
-      padding: 40px;
-      border-radius: 25px;
-
-      .profile-content {
-        float: left;
-        display: grid;
-        grid-template-rows: auto 1fr 1fr 1fr 1fr;
-        gap: 5px;
-        margin-left: 5rem;
-
-        h2 {
-          margin: 1rem 0;
+      .img-container {
+        position: sticky;
+        top: 135px;
+        
+        figure img {
+          width: 482px;
+          height: 570px;
+          border-radius: 25px;
+          -o-object-fit: cover;
+          object-fit: cover;
         }
       }
+    }
+  
+    .swiper-container .swiper-wrapper {
+      display: grid;
+      row-gap: 3.5rem;
+      align-items: right; 
+  
+      .swiper-slide {
+        width: 587px;
+        height: 254px;
+        background-color: #F5F3ED;
+        border: 1px solid #E1E0DB;
+        padding: 40px;
+        border-radius: 25px;
+        }
+  
+        .profile-content {
+          float: left;
+          display: grid;
+          grid-template-rows: auto 1fr 1fr 1fr 1fr;
+          gap: 8px;
+          margin-left: 5rem;
+  
+          > h2 {
+            margin: 1rem 0;
+          }
 
-      .profile-img {
-        display: flex;
-        justify-content: center;
-
-        img {
-          width: 175px;
-          border-radius: 25px;
+          > p {
+            padding-left: 3px;
+          }
+        }
+  
+        .profile-img {
+          display: flex;
+          justify-content: center;
+  
+          img {
+            width: 175px;
+            border-radius: 25px;
+          }
         }
       }
     }
   }
-}
 
 /* page4 영역 */
 

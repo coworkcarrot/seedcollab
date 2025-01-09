@@ -414,17 +414,16 @@ nav ul.menu-link > li > a:hover:after {
   /* background: burlywood; */
 }
 
-/* page3 영역 - margin 이용해서 중앙 간격 유지 */
+/* page3 영역 */
 #page-3 {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  display: grid;
 }
 #page-3 .page-3-tit {
   width: 100%;
   height: 200px;
-  display: flex;
-  align-items: flex-end;
 }
 #page-3 .page-3-tit .sec3-h1 {
   font-size: 50px;
@@ -434,65 +433,55 @@ nav ul.menu-link > li > a:hover:after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 100px 0;
-  height: 100%;
 }
 #page-3 .sec3-container .img-wrapper {
-  width: 85%; /* margin, width 이용해서 중앙 간격 유지 */
-  height: 100%;
+  /* .img-container sticky 적용을 위한 레이아웃 */
 }
 #page-3 .sec3-container .img-wrapper .img-container {
   position: -webkit-sticky;
   position: sticky;
-  top: 135px;
 }
 #page-3 .sec3-container .img-wrapper .img-container figure {
-  text-align: right; /* img 오른쪽 정렬렬 */
+  display: inline-block;
+  text-align: right;
 }
 #page-3 .sec3-container .img-wrapper .img-container figure img {
   width: 482px;
   height: 570px;
   border-radius: 25px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-#page-3 .sec3-container .swiper-container {
-  width: 95%; /* margin, width 이용해서 중앙 간격 유지 */
-  height: 100%;
-  text-align: left;
-  margin-left: 5%; /* margin, width 이용해서 중앙 간격 유지 */
 }
 #page-3 .sec3-container .swiper-container .swiper-wrapper {
-  width: 100%;
+  width: 50%;
   display: grid;
   row-gap: 3.5rem;
   align-items: right;
 }
 #page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide {
   width: 587px;
-  height: 245px;
+  height: 254px;
   background-color: #F5F3ED;
   border: 1px solid #E1E0DB;
-  padding: 30px 40px 40px;
+  padding: 20px 40px 40px;
   border-radius: 25px;
 }
-#page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide .profile-content {
+#page-3 .sec3-container .swiper-container .swiper-wrapper .profile-content {
   float: left;
   display: grid;
   grid-template-rows: auto 1fr 1fr 1fr 1fr;
   gap: 8px;
   margin-left: 5rem;
 }
-#page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide .profile-content > h2 {
+#page-3 .sec3-container .swiper-container .swiper-wrapper .profile-content > h2 {
   margin: 1rem 0;
 }
-#page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide .profile-content > p {
+#page-3 .sec3-container .swiper-container .swiper-wrapper .profile-content > p {
   padding-left: 3px;
 }
-#page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide .profile-img {
+#page-3 .sec3-container .swiper-container .swiper-wrapper .profile-img {
   display: flex;
   justify-content: center;
 }
-#page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide .profile-img img {
+#page-3 .sec3-container .swiper-container .swiper-wrapper .profile-img img {
   width: 175px;
   border-radius: 25px;
 }
@@ -616,4 +605,4 @@ footer .footer-nav .f-nav ul li {
   font-size: 1.5rem;
 }
 
-/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index-copy.css.map */

@@ -106,55 +106,56 @@
 //   });
 // });
 
-$(function () {
-  var d = false;
+//  여기부터 시작!!!!!!!!!!!!!!!
+// $(function () {
+//   var d = false;
 
-  $("#page-2").on('mousewheel DOMMouseScroll', function (e) {
-      var E = e.originalEvent;
-      delta = 0;
-      if (E.detail) {
-          delta = E.detail * -40;
-      } else {
-          delta = E.wheelDelta;
-      }
+//   $("#page-2").on('mousewheel DOMMouseScroll', function (e) {
+//       var E = e.originalEvent;
+//       delta = 0;
+//       if (E.detail) {
+//           delta = E.detail * -40;
+//       } else {
+//           delta = E.wheelDelta;
+//       }
 
-      var a = parseInt($(".center ul").css("top"));
-      var b = $(".center li").height();
-      var c = $('.center li').length;
+//       var a = parseInt($(".center ul").css("top"));
+//       var b = $(".center li").height();
+//       var c = $('.center li').length;
 
-      // 스크롤을 제한할 조건 추가
-      if ((delta < 0 && a > (c - 1) * -b && !d) || (delta > 0 && a < 0 && !d)) {
-          e.preventDefault(); // 조건에 따라 스크롤 차단
+//       // 스크롤을 제한할 조건 추가
+//       if ((delta < 0 && a > (c - 1) * -b && !d) || (delta > 0 && a < 0 && !d)) {
+//           e.preventDefault(); // 조건에 따라 스크롤 차단
 
-          d = true;
-          var direction = delta < 0 ? -1 : 1;
+//           d = true;
+//           var direction = delta < 0 ? -1 : 1;
 
-          $('.center ul').stop().animate({
-              "top": a += b * direction
-          }, 1400);
+//           $('.center ul').stop().animate({
+//               "top": a += b * direction
+//           }, 1400);
 
-          $('.left-top ul').stop().animate({
-              "top": parseInt($(".left-top ul").css("top")) + b * direction
-          }, 1700);
+//           $('.left-top ul').stop().animate({
+//               "top": parseInt($(".left-top ul").css("top")) + b * direction
+//           }, 1700);
 
-          $('.left-bottom ul').stop().animate({
-              "top": parseInt($(".left-bottom ul").css("top")) + b * direction
-          }, 1700);
+//           $('.left-bottom ul').stop().animate({
+//               "top": parseInt($(".left-bottom ul").css("top")) + b * direction
+//           }, 1700);
 
-          $('.right-top ul').stop().animate({
-              "top": parseInt($(".right-top ul").css("top")) + b * direction
-          }, 1700);
+//           $('.right-top ul').stop().animate({
+//               "top": parseInt($(".right-top ul").css("top")) + b * direction
+//           }, 1700);
 
-          $('.right-bottom ul').stop().animate({
-              "top": parseInt($(".right-bottom ul").css("top")) + b * direction
-          }, 1700, function () {
-              d = false;
-          });
-      }
-  });
-});
+//           $('.right-bottom ul').stop().animate({
+//               "top": parseInt($(".right-bottom ul").css("top")) + b * direction
+//           }, 1700, function () {
+//               d = false;
+//           });
+//       }
+//   });
+// });
 
-
+// 여기까지 !!!!!!!!!!!
 
 
 

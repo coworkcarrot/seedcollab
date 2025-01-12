@@ -72,9 +72,9 @@ img {
 /* navigation bar */
 nav {
   -webkit-position: -webkit-sticky;
-  position: sticky;
+  position: static;
   top: 0;
-  z-index: 5;
+  // z-index: 5;
 
   .nav-container {
     display: flex;
@@ -87,6 +87,7 @@ nav {
     border-bottom: 1px solid rgba(130, 130, 130, 0.2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    z-index: 5;
   }
 
   .nav-logo, .nav-button {
@@ -142,6 +143,12 @@ nav {
       transform-origin: 0 0;
       transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
     }
+  }
+
+  nav::after {
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 
@@ -232,11 +239,297 @@ nav {
   }
 }
 
+/* page1 영역 */
+
+#banner {
+  width: 100%;
+  height: 25rem;
+
+  .bn-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      background: url("../assets/banner-1.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      opacity: 0.8;
+      width: 100%;
+      height: 25rem;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .bn-title {
+      position: absolute;
+      top: 50%;
+      font-size: 2.5rem; /* 원하는 크기 */
+      font-weight: bold; /* 필요에 따라 가중치 변경 */
+      color: #FCF6EC; 
+    }
+  }
+}
+
+/* 탭 스타일 */
+.sub-menu {
+  box-sizing: border-box;
+
+  .nav-sub-container {
+    width: 100%;
+    height: 4.5rem;
+    margin: 50px auto 0;
+    display: flex;
+    box-sizing: border-box;
+
+    .nav-sub-menu {
+      width: 100%;
+      border-bottom: 1.5px solid #f5a623;
+  
+      ul.sub-menu-link {
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+
+        
+        > li {
+
+          [aria-selected="true"] {
+            color: #fff;
+            border-radius: 5px 5px 0 0;
+            border-top: 1.5px solid #F19717;
+            border-left: 1.5px solid #F19717;
+            border-right: 1.5px solid #F19717;
+          }
 
 
+          
+          > a {
+            all: unset;
+            display: block;
+            padding: 25px 0;
+            width: calc(100vw / 3);
+            height: 4.5rem;
+            color: #aaa;
+            font-size: 1.3rem;
+            font-weight: lighter;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1.5px solid transparent;
+            // position:relative; display:block;
+
+            #tab1, #tab2, #tab3 {
+              flex: 1;
+            }  
+            
+            /* 기본 상태 */
+            // &:not(.active) {
+            //   color: #aaa;
+            // }
+
+            // &::before {
+            //   content:"";
+            //   position:absolute;
+            //   left:0;
+            //   top:0px;
+            //   width:100%;
+            //   height:3px;
+            // }
+
+            /* 활성화된 탭 */
+            // &:active {
+            //   color: #f5a623;
+            //   border-radius: 5px 5px 0 0;
+            //   border-top: 1.5px solid #F19717;
+            //   border-left: 1.5px solid #F19717;
+            //   border-right: 1.5px solid #F19717;
+            // }
+
+            &:hover {
+              border-radius: 5px 5px 0 0;
+              border-top: 1.5px solid #F19717;
+              border-left: 1.5px solid #F19717;
+              border-right: 1.5px solid #F19717;
+            }
+            
+          }
+          // > a.active::before{background:#7ea21e;}
+          // > a.active{
+          //   background: #fff; color:#F19717;
+          //   border-radius: 5px 5px 0 0;
+          //   border-top: 1.5px solid #F19717;
+          //   border-left: 1.5px solid #F19717;
+          //   border-right: 1.5px solid #F19717;
+          // }
+        }
+      }
+    }
+  }
+}
+
+/* 탭 콘텐츠 - 소개 스타일 */
+.tab-content {
+  display: none;
+  margin: 0 auto;
+  // background: #f1f1f1;
+  width: 50%;
+  text-align: left;
+  line-height: 1.6;
+  
+  &[aria-hidden="false"] {
+    display: block;
+  }
+  
+  .tab-cont-wrapper {
+    padding: 100px 15px 200px;
+    position: relative;
+
+    .logo-content {
+      width: 150px;
+      margin: 0 0 5px;
+      position: absolute;
+      top: 3.4375rem;
+      left: 0;
+    }
+  
+    .content-tit {
+      font-size: 1.3rem;
+      margin-bottom: .9375rem;
+      font-weight: 800;
+    }
+
+    > h1 {
+      margin-bottom: 1.875rem;
+      font-weight: lighter;
+    }
+  
+    > img {
+      width: 700px;
+      margin: 5.5rem 0 1.5rem;
+      border-radius: 10px;
+    }
+
+    > p {
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    > h2 {
+      font-weight: lighter;
+      margin: 5rem 0;
+    }
+  }
+
+  &[aria-hidden="false"] {
+    display: block;
+  }
+}
+
+/* 탭 콘텐츠 - 캠페인 스타일 */
+.tab-cam-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 15px 200px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+
+  .campaign-box {
+    margin-bottom: 5rem;
+    
+    .campaign-box-container {
+      width: 31.25rem;
+      height: 100%;
+      border-radius: 10px;
+      margin: 0 auto;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+      
+      .cam-content {
+        text-align: left;
+        padding: .9375rem;
+
+        .cam-cont-tit {
+          font-weight: bold;
+          font-size: 1rem;
+        }
+
+        .cam-cont-cont {
+          font-size: .9rem;
+          color: rgb(67, 66, 66);
+        }
+
+        p {
+
+          &:last-child {
+            margin-top: .625rem;
+          }
+        }
+      }
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .cam-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+}
+
+/* 탭 콘텐츠 - 후원하기 스타일 */
+#content3 {
+
+  > .tab-cont-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+
+    .sponsor-tit {
+      color: #F2970C;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  
+    .sponsor-cont {
+      color: #F2970C;
+    }
+
+    .sponsor-cont-black {
+      font-size: .8rem;
+    }
+
+    button {
+      width: 120px;
+      height: 100%;
+      padding: .625rem;
+      font-size: .8rem;
+      background-color: #F2970C;
+      text-align: center;
+      position: relative;
+      margin: 50px auto 0;
+      
+      > a {
+        color: #fff;
+      }
+    }
+  }
+}
 
 /* footer */
-
 footer {
   width: 100%;
   height: 340px;

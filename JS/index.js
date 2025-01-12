@@ -7,44 +7,5 @@ document.querySelector('.btn-antiman').addEventListener('click', function (event
   });
 });
 
-// page-3 swiper-slide
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const imgContainer = document.querySelector(".img-container");
-//   const profileList = document.querySelector(".profile-list");
-//   const page3 = document.querySelector("#page-3");
 
-//   // 페이지와 블록의 오프셋 계산
-//   const pageOffsetTop = page3.offsetTop;
-//   const profileListHeight = profileList.scrollHeight;
-//   const imgContainerHeight = imgContainer.offsetHeight;
-
-//   // 이벤트 리스너 추가
-//   window.addEventListener("scroll", () => {
-//     const scrollY = window.scrollY;
-
-//     // 스크롤 위치가 페이지 영역에 도달했는지 확인
-//     if (scrollY >= pageOffsetTop && scrollY <= pageOffsetTop + profileListHeight - imgContainerHeight) {
-//       // 왼쪽 블록 고정
-//       imgContainer.style.position = "relative";
-//       imgContainer.style.top = "0";
-//     } else if (scrollY > pageOffsetTop + profileListHeight - imgContainerHeight) {
-//       // 오른쪽 블록의 스크롤 완료 후, 고정 해제
-//       imgContainer.style.position = "absolute";
-//       imgContainer.style.top = `${profileListHeight - imgContainerHeight}px`;
-//     } else {
-//       // 초기 상태로 복귀
-//       imgContainer.style.position = "relative";
-//       imgContainer.style.top = "0";
-//     }
-//   });
-// });

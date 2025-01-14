@@ -6,6 +6,3 @@ document.querySelector('.btn-antiman').addEventListener('click', function (event
     block: 'center',  // 수직으로 중앙 정렬
   });
 });
-
-
-

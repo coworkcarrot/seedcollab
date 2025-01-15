@@ -456,6 +456,7 @@ nav ul.menu-link > li > a:hover:after {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 #page-3 .page-3-tit {
   width: 100%;
@@ -717,4 +718,4 @@ footer .footer-nav .f-nav ul li {
   font-size: 1.5rem;
 }
 
-/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map */

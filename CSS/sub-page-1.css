@@ -56,6 +56,7 @@ nav .nav-container {
   display: flex;
   position: absolute;
   justify-content: space-between;
+  gap: 60px 60px 5px;
   align-items: center;
   width: 100%;
   height: 5rem;
@@ -64,28 +65,31 @@ nav .nav-container {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
-nav .nav-logo,
+nav .nav-logo {
+  width: 20%;
+}
 nav .nav-button {
-  width: 35%;
+  width: 10%;
 }
 nav .nav-logo .menu-logo a {
-  height: 50px;
+  height: 60px;
 }
 nav .nav-logo .menu-logo a img {
   height: 3rem;
 }
 nav .nav-menu {
-  width: 30%;
+  width: 60%;
 }
 nav .nav-menu ul.menu-link {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 nav .nav-menu ul.menu-link > li > a {
   color: #2F2521;
   position: relative;
   display: inline-block;
+  margin: 0 60px;
 }
 nav ul.menu-link > li > a:hover {
   text-decoration: none;
@@ -104,6 +108,38 @@ nav ul.menu-link > li > a:after {
   transition: transform 0.3s cubic-bezier(0.45, 0.46, 0.05, 0.96);
 }
 nav ul.menu-link > li > a:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 0;
+  transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
+}
+
+.nav-login-register {
+  width: 10%;
+}
+.nav-login-register .login-register-link {
+  display: flex;
+  justify-content: space-around;
+  text-align: right;
+}
+.nav-login-register .login-register-link > li > a {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #58463f;
+}
+.nav-login-register .login-register-link > li > a:after {
+  content: "";
+  position: relative;
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #58463f;
+  transform: scaleX(0);
+  transform-origin: 100% 0;
+  /* transform-origin: 0 0; */
+  transition: transform 0.3s cubic-bezier(0.45, 0.46, 0.05, 0.96);
+}
+.nav-login-register .login-register-link > li > a:hover:after {
   transform: scaleX(1);
   transform-origin: 0 0;
   transition: transform 0.5s cubic-bezier(0.45, 0.46, 0.05, 0.96);
@@ -456,10 +492,7 @@ footer .footer-container {
   box-sizing: border-box;
   margin: 0 auto;
 }
-footer p,
-footer .f-nav li a,
-footer b,
-footer h4 {
+footer p, footer .f-nav li a, footer b, footer h4 {
   color: #eae1dd;
 }
 
@@ -478,8 +511,7 @@ footer .footer-nav .f-nav ul li {
   margin-bottom: 10px;
 }
 
-.footer-right h4,
-.footer-right p {
+.footer-right h4, .footer-right p {
   margin-bottom: 10px;
 }
 .footer-right .number {
@@ -493,7 +525,7 @@ footer .footer-nav .f-nav ul li {
 .footer-right a img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* top버튼 */

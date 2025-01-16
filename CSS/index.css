@@ -456,7 +456,6 @@ nav ul.menu-link > li > a:hover:after {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 #page-3 .page-3-tit {
   width: 100%;
@@ -566,14 +565,6 @@ nav ul.menu-link > li > a:hover:after {
   height: 75%;
 }
 
-/* #page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide .profile-content > h2 {
-  margin: 1rem 0;
-} */
-/* 
-#page-3 .sec3-container .swiper-container .swiper-wrapper .swiper-slide:last-of-type .profile-img{
-  background: #2F2521;
-  border-radius: 0 25px 25px 0;
-} */
 /* page4 영역 */
 #page-4 {
   width: 100%;
@@ -718,4 +709,4 @@ footer .footer-nav .f-nav ul li {
   font-size: 1.5rem;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */

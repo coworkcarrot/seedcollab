@@ -13,3 +13,5 @@ Link: (https://coworkcarrot.github.io/seedcollab/)
 ## 1.프로젝트 개요: 
    
   주요 기능: 
+
+## 현지의 로컬 main-test > one branch 내 자료입니다. 

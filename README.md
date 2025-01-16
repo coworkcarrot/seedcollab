@@ -14,4 +14,4 @@ Link: (https://coworkcarrot.github.io/seedcollab/)
    
   주요 기능: 
 
-## index-register-ToS를 main으로 merge 진행
+## index-register-userinfo를 main으로 merge 진행

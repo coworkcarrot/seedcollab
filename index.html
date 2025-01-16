@@ -31,10 +31,23 @@
   <!-- font awesome kit -->
   <script src="https://kit.fontawesome.com/ec5d804a17.js" crossorigin="anonymous"></script>
 
-  <!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
   <script defer src="./JS/index.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <!-- page1 하단 버튼 -->
+  <script defer src="./JS/index.js"></script>
+
+  <!-- top버튼 js -->
+  <script defer src="./JS/top-btn-scroll.js"></script>
+
+  <!-- page2 슬라이드 js -->
+  <script defer src="./JS/page2-slider.js"></script>
 
 </head>
 
@@ -59,14 +72,21 @@
           <div class="nav-menu">
             <ul class="menu-link">
               <li>
-                <a href="#">스토어</a>
+                <a href="https://smartstore.naver.com/pawinhand" target="_blank">스토어</a>
               </li>
               <li>
-                <a href="#">공지사항</a>
+                <a href="#" target="_blank">공지사항</a>
               </li>
               <li>
-                <a href="#">Q&amp;A</a>
+                <a href="#" target="_blank">Q&amp;A</a>
               </li>
+            </ul>
+          </div>
+
+          <div class="nav-login-register">
+            <ul class="login-register-link">
+              <li><a href="#" target="_blank">로그인</a></li>
+              <li><a href="#" target="_blank">회원가입</a></li>
             </ul>
           </div>
 
@@ -113,56 +133,68 @@
     <!-- page-2 -->
     <section id="page-2">
 
-      <div class="slider">
-
-
-        <!-- 왼쪽 문구 -->
-        <div class="left">
-          <div class="left-heading">
-            <h1 class="left-a">PAWINHAND</h1>
-          </div>
-
-          <div class="left-heading">
-            <h1 class="left-b">INTODUCTION</h1>
-          </div>
+      <!-- 왼쪽 문구 -->
+      <div class="left">
+        <div class="left-top">
+          <ul class="left-txt">
+            <li class="text1">PAWINHAND</li>
+            <li class="text2">입양절차</li>
+            <li class="text3">보호동물 소개</li>
+            <li class="text3">공지사항</li>
+          </ul>
         </div>
 
-        <!-- 중앙 카드 -->
-        <div class="center">
-          <div class="tilt-card-container">
-            <div class="tilt-card">
-              <a href="#" target="_blank"></a>
-            </div>
-          </div>
-
-          <!-- <div class="tilt-card-container">
-                <div class="tilt-card">
-                    <a href="#" target="_blank"></a>
-                </div>
-            </div>
-
-            <div class="tilt-card-container">
-                <div class="tilt-card">
-                    <a href="#" target="_blank"></a>
-                </div>
-            </div> -->
+        <div class="left-bottom">
+          <ul class="left-txt">
+            <li class="text1">INTODUCTION</li>
+            <li class="text2">입양절차</li>
+            <li class="text3">보호동물 소개</li>
+            <li class="text3">공지사항</li>
+          </ul>
         </div>
-
-        <!-- 오른쪽 문구 -->
-        <div class="right">
-          <div class="right-heading">
-            <h1 class="right-a">사지말고</h1>
-          </div>
-
-          <div class="right-heading">
-            <h1 class="right-b">입양하세요</h1>
-          </div>
-        </div>
-
-        <!-- 하단 카운터 -->
-        <div class="counter">01 / 04</div>
-
       </div>
+
+      <!-- 중앙 카드 -->
+      <div class="center">
+        <ul class="center-box">
+          <a href="#" target="_blank">
+            <li class="box1"></li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="box2"></li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="box3"></li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="box4"></li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- 오른쪽 문구 -->
+      <div class="right">
+        <div class="right-top">
+          <ul class="right-txt">
+            <li class="text1">사지말고</li>
+            <li class="text2">입양절차2</li>
+            <li class="text3">보호동물 소개2</li>
+            <li class="text3">공지사항2</li>
+          </ul>
+        </div>
+
+        <div class="right-bottom">
+          <ul class="right-txt">
+            <li class="text1">입양하세요</li>
+            <li class="text2">입양절차2</li>
+            <li class="text3">보호동물 소개2</li>
+            <li class="text3">공지사항2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 하단 카운터 -->
+      <!-- <div class="counter">01 / 04</div> -->
 
     </section>
 
@@ -179,79 +211,160 @@
 
       <div class="sec3-container">
 
-        <aside class="img-container">
-          <figure>
-            <img src="./assets/section3-aside-img-2.jpg" alt="유기동물 이미지">
-          </figure>
-        </aside>
-
-        <div class="profile-list">
-          <div class="swiper-wrapper mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
-          space-between="30" free-mode="true">
-
-            <ul>
-
-              <div class="swiper-slide">
-                <li>
-                  <a href="#">
-                    <div class="profile-content">
-                      <h2>[개] 믹스견</h2>
-                      <p>암컷(중성화 X)</p>
-                      <p>흰색</p>
-                      <p>2024년생(60일미만)</p>
-                      <p>1.1kg</p>
-                    </div>
-  
-                    <div class="profile-img">
-                      <img src="./assets/pawinhand-files/review03.jpg" alt="">
-                    </div>
-                  </a>
-                </li>
-              </div>
-              
-
-              <div class="swiper-slide">
-                <li>
-                  <a href="#">
-                    <div class="profile-content">
-                      <h2>[개] 믹스견</h2>
-                      <p>암컷(중성화 X)</p>
-                      <p>갈색&흰색</p>
-                      <p>2020년생</p>
-                      <p>3kg</p>
-                    </div>
-  
-                    <div class="profile-img">
-                      <img src="./assets/pawinhand-files/review02.jpg" alt="">
-                    </div>
-                  </a>
-                </li>
-              </div>
-              
-
-              <div class="swiper-slide">
-                <li>
-                  <a href="#">
-                    <div class="profile-content">
-                      <h2>[개] 믹스견</h2>
-                      <p>수컷(중성화 X)</p>
-                      <p>검정색</p>
-                      <p>2024년생</p>
-                      <p>6.4kg</p>
-                    </div>
-  
-                    <div class="profile-img">
-                      <img src="./assets/pawinhand-files/story_1734365027771.png" alt="">
-                    </div>
-                  </a>
-                </li>
-              </div>
-              
-
-            </ul>
-
-          </div>
+        <div class="img-wrapper">
+          <aside class="img-container">
+            <figure>
+              <img src="./assets/section3-aside-img-2.jpg" alt="유기동물 이미지">
+            </figure>
+          </aside>
         </div>
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>수컷(중성화 X)</p>
+                    <p>기타(검정&갈색)</p>
+                    <p>2022년생</p>
+                    <p>17.40kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-1.png" alt="검정&갈색 개">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>수컷(중성화 X)</p>
+                    <p>흰색</p>
+                    <p>2024년생(60일미만)</p>
+                    <p>1.7kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-2.png" alt="흰색 강아지">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>수컷(중성화 X)</p>
+                    <p>황색</p>
+                    <p>2024년생(60일미만)</p>
+                    <p>2kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-3.png" alt="황색 강아지">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>암컷</p>
+                    <p>갈색</p>
+                    <p>2020년생</p>
+                    <p>15kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-4.png" alt="갈색 개">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>수컷(중성화 X)</p>
+                    <p>흰색</p>
+                    <p>2024년생</p>
+                    <p>3kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-5.png" alt="흰색 강아지">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>암컷(중성화 X)</p>
+                    <p>흰색</p>
+                    <p>2024년생(60일미만)</p>
+                    <p>2.2kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-6.png" alt="흰색 강아지">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>암컷(중성화 O)</p>
+                    <p>기타(아이보리)</p>
+                    <p>2022년생</p>
+                    <p>12.8kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-7.png" alt="아이보리색 개">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2>[개] 믹스견</h2>
+                    <p>수컷(중성화 X)</p>
+                    <p>검정색</p>
+                    <p>2024년생</p>
+                    <p>3.5kg</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/profile-img-8.png" alt="검정색 강아지">
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="profile-content">
+                    <h2></h2>
+                    <p><br/>자세한 프로필 정보는<br/><br/>클릭해서 확인해보세요</p>
+                  </div>
+
+                  <div class="profile-img">
+                    <img src="./assets/question-sign-removebg.png" alt="물음표 이미지">
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
 
       </div>
     </section>
@@ -305,16 +418,17 @@
           </div>
 
         </div>
-        <button class="procedures-btn"><a href="#">자세히보기</a></button>
+        <button class="procedures-btn"><a href="https://play.google.com/store/apps/details?id=lost.animal.main" target="_blank">앱에서 확인하기</a></button>
       </div>
 
 
     </section>
 
     <!-- footer -->
-    <footer>
+  <footer>
+    <div class="footer-container">
       <div class="footer-logo">
-        <h1 class="logo"><a href="#"><img src="assets/logo.png" alt=""></a></h1>
+        <h1 class="logo"><a href="#"><img src="assets/logo.png" alt="포인핸드 로고"></a></h1>
 
         <p class="txt">
           Adopt Animals, Adopt Family<br>
@@ -329,12 +443,12 @@
       <div class="footer-nav">
         <nav class="f-nav">
           <ul>
-            <li><a href="#">포인핸드 소개</a></li>
-            <li><a href="#">입양절차</a></li>
-            <li><a href="#">보호동물</a></li>
-            <li><a href="#">입양후기</a></li>
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">Q&A</a></li>
+            <li><a href="#" aria-label="포인핸드 소개 페이지로 이동">포인핸드 소개</a></li>
+            <li><a href="#" aria-label="입양절차 페이지로 이동">입양절차</a></li>
+            <li><a href="#" aria-label="보호동물 페이지로 이동">보호동물</a></li>
+            <li><a href="#" aria-label="입양후기 페이지로 이동">입양후기</a></li>
+            <li><a href="#" aria-label="공지사항 페이지로 이동">공지사항</a></li>
+            <li><a href="#" aria-label="QnA 페이지로 이동">QnA</a></li>
           </ul>
         </nav>
       </div>
@@ -344,19 +458,25 @@
         <p class="email">pawinhand@naver.com</p>
         <p class="number">02-6956-6242</p>
 
-        <h4>SNS</h4>
+        <!-- <h4>SNS</h4> -->
         <P class="icon-instagram">
-          <a href="https://www.instagram.com/pawinhand_official/" target="_blank"><img src="assets/instgram-logo.png"
-              alt=""></a>
-          <a href="https://blog.naver.com/pawinhand" target="_blank"><img src="assets/naver-logo.png" alt=""></a>
+          <a href="https://www.instagram.com/pawinhand_official/" target="_blank" aria-label="새 창에서 인스타그램 보기"><img
+              src="assets/instgram.logo" alt="인스타그램 로고"></a>
+          <a href="https://blog.naver.com/pawinhand" target="_blank" aria-label="새 창에서 블로그 보기"><img
+              src="assets/naver.logo" alt="네이버 로고"></a>
+          <a href=https://apps.apple.com/kr/app/%ED%8F%AC%EC%9D%B8%ED%95%B8%EB%93%9C-%EC%9C%A0%EA%B8%B0%EB%8F%99%EB%AC%BC-%EC%9E%85%EC%96%91-%EC%8B%A4%EC%A2%85%EB%8F%99%EB%AC%BC-%EC%B0%BE%EA%B8%B0/id1019549518
+            target="_blank" aria-label="새 창에서 앱스토어 보기"><img src="assets/appstore.logo" alt="앱스토어로고"></a>
+          <a href="https://play.google.com/store/apps/details?id=lost.animal.main" target="_blank"
+            aria-label="새 창에서 구글플레이이 보기"><img src="assets/googleplay.logo" alt="구글플레이로고"></a>
         </P>
       </div>
-    </footer>
-
-    <!-- top 버튼 -->
-    <div id="top-btn">
-      <a href="#"><i class="fa-solid fa-angles-up"></i></a>
     </div>
+  </footer>
+
+  <!-- TOP 버튼 -->
+  <div id="top-btn">
+    <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+  </div>
 
   </div>
 

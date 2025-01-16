@@ -14,4 +14,4 @@ Link: (https://coworkcarrot.github.io/seedcollab/)
    
   주요 기능: 
 
-## page-3 내 자료를 main으로 merge 합니다.
+## sub-page-1를 main으로 merge 진행

@@ -12,7 +12,9 @@
 /* Font Variables */
 /* Page-1 arrow down */
 @keyframes arrow_down {
-  0%, 100% {
+
+  0%,
+  100% {
     top: 0rem;
   }
 
@@ -32,7 +34,9 @@
 }
 
 a {
-  &:link, &:visited {
+
+  &:link,
+  &:visited {
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -98,16 +102,17 @@ nav {
       display: flex;
       justify-content: center;
 
-      > li > a {
+      >li>a {
         color: #2F2521;
         position: relative;
         display: inline-block;
         margin: 0 60px;
+        font-size: .9rem;
       }
     }
   }
 
-  ul.menu-link > li > a {
+  ul.menu-link>li>a {
     &:hover {
       text-decoration: none;
     }
@@ -143,7 +148,7 @@ nav {
     justify-content: space-around;
     text-align: right;
 
-    > li > a {
+    >li>a {
       display: inline-block;
       font-size: 0.9rem;
       color: #58463f;
@@ -266,15 +271,16 @@ header {
   height: 500px;
   margin: 0 auto;
   position: relative;
-  background: #000;
+  background: url("../assets/sub-page-1-banner1.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
   z-index: 1;
 
   &::after {
-    background: url("../assets/sub-page-1-banner1.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    opacity: 0.7;
+    background: #000;
+    opacity: 0.2;
     width: 100%;
     height: 100%;
     content: "";
@@ -397,7 +403,7 @@ section {
       margin-bottom: 100px;
     }
 
-    > li > {
+    >li> {
       img {
         width: 100%;
         border-radius: 10px;
@@ -417,7 +423,7 @@ section {
     }
   }
 
-  .tab-cont-wrapper > h2 {
+  .tab-cont-wrapper>h2 {
     font-weight: lighter;
     margin: 5rem 0;
   }
@@ -508,7 +514,7 @@ section {
     }
   }
 
-  > .tab-cont-wrapper {
+  >.tab-cont-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1.5625rem;
@@ -552,7 +558,7 @@ section {
       text-align: center;
       margin: 0 20px;
 
-      > a {
+      >a {
         color: #fff;
       }
     }
@@ -584,7 +590,10 @@ footer {
     margin: 0 auto;
   }
 
-  p, .f-nav li a, b, h4 {
+  p,
+  .f-nav li a,
+  b,
+  h4 {
     color: #eae1dd;
   }
 }
@@ -611,7 +620,9 @@ footer .footer-nav .f-nav ul li {
 }
 
 .footer-right {
-  h4, p {
+
+  h4,
+  p {
     margin-bottom: 10px;
   }
 

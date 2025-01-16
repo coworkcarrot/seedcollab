@@ -9,14 +9,6 @@
 }
 /* Font Variables */
 /* Page-1 arrow down */
-@-webkit-keyframes arrow_down {
-  0%, 100% {
-    top: 0rem;
-  }
-  50% {
-    top: 0.5rem;
-  }
-}
 @keyframes arrow_down {
   0%, 100% {
     top: 0rem;
@@ -76,7 +68,6 @@ nav .nav-container {
   backdrop-filter: blur(10px);
 } */
 nav {
-  -webkit-position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -119,6 +110,7 @@ nav .nav-menu ul.menu-link > li > a {
   position: relative;
   display: inline-block;
   margin: 0 60px;
+  font-size: 0.9rem;
 }
 nav ul.menu-link > li > a:hover {
   text-decoration: none;
@@ -305,7 +297,6 @@ nav ul.menu-link > li > a:hover:after {
 }
 #page-1 .hd-container .bn-btn {
   position: relative;
-  -webkit-animation: arrow_down 1.5s infinite;
   animation: arrow_down 1.5s infinite;
 }
 #page-1 .hd-container .bn-btn .btn-antiman {
@@ -316,11 +307,8 @@ nav ul.menu-link > li > a:hover:after {
   color: #FFF;
   font-size: 1.3rem;
   text-align: center;
-  -webkit-animation: arrow_down 1.5s infinite;
   animation: arrow_down 1.5s infinite;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 #page-1 .hd-container .bn-btn .btn-antiman:hover {
@@ -480,7 +468,6 @@ nav ul.menu-link > li > a:hover:after {
   height: 100%;
 }
 #page-3 .sec3-container .img-wrapper .img-container {
-  position: -webkit-sticky;
   position: sticky;
   top: 135px;
 }
@@ -709,4 +696,4 @@ footer .footer-nav .f-nav ul li {
   font-size: 1.5rem;
 }
 
-/*# sourceMappingURL=index.css.map *//*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.css.map */

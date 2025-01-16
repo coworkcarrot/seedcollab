@@ -85,3 +85,14 @@ function execDaumPostcode() {
         }
     }).open();
 }
+
+//회원가입 시 필수 입력사항 입력해야만 가입완료가 되도록 설정
+function validateForm() {
+    var form = document.getElementById('registrationForm');
+    if (!form.checkValidity()) {
+      alert('필수 값이 모두 입력되었는지 확인 바랍니다.');
+    } else {
+      alert('회원가입이 정상적으로 완료 되었습니다 :)');
+      window.location.href = 'index.html';
+    }
+  }

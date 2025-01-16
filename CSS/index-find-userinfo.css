@@ -45,7 +45,6 @@ img {
 
 /* 네비게이션 바 */
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -88,6 +87,7 @@ nav .nav-menu ul.menu-link > li > a {
   position: relative;
   display: inline-block;
   margin: 0 60px;
+  font-size: 0.9rem;
 }
 nav ul.menu-link > li > a:hover {
   text-decoration: none;
@@ -391,11 +391,6 @@ button {
   font-size: 1rem;
 }
 
-:-ms-input-placeholder {
-  color: rgb(213, 212, 212);
-  font-size: 1rem;
-}
-
 ::placeholder {
   color: rgb(213, 212, 212);
   font-size: 1rem;
@@ -510,4 +505,4 @@ footer .footer-nav .f-nav ul li {
   display: none;
 }
 
-/*# sourceMappingURL=index-find-userinfo.css.map *//*# sourceMappingURL=index-find-userinfo.css.map */
+/*# sourceMappingURL=index-find-userinfo.css.map */

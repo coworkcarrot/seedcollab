@@ -5,7 +5,6 @@ $(function () {
   var d = false;
 
   $("#page-2").on('mousewheel DOMMouseScroll', function (e) {
-      // e.preventDefault(); //page2 스크롤 기능 막음
       var E = e.originalEvent;
       delta = 0;
       if (E.detail) {
@@ -36,34 +35,35 @@ $(function () {
 
       if (delta < 0 && a > (c - 1) * -b && !d) {
           // 마우스 휠을 아래로 내렸을 경우(delta=음수)
+          e.preventDefault(); //page2 스크롤 기능 막음
           d = true;
           $('.center ul').stop().animate({
               "top": a += -b
-          }, 400, function () {
+          }, 300, function () {
               // d = false;
           });
 
           $('.left-top ul').stop().animate({
               "top": lt_a += -lt_b
-          }, 700, function () {
+          }, 950, function () {
               // d = false;
           });
 
           $('.left-bottom ul').stop().animate({
               "top": lb_a += -lb_b
-          }, 700, function () {
+          }, 1050, function () {
               // d = false;
           });
 
           $('.right-top ul').stop().animate({
               "top": rt_a += -rt_b
-          }, 700, function () {
+          }, 950, function () {
               // d = false;
           });
 
           $('.right-bottom ul').stop().animate({
               "top": rb_a += -rb_b
-          }, 700, function () {
+          }, 1050, function () {
               d = false;
           });
 
@@ -71,34 +71,35 @@ $(function () {
 
       if (delta > 0 && a < 0 && !d) {
           // 마우스 휠을 위로 올렸을 경우
+          e.preventDefault(); //page2 스크롤 기능 막음
           d = true;
           $('.center ul').stop().animate({
               "top": a += b
-          }, 400, function () {
+          }, 300, function () {
               // d = false;
           });
 
           $('.left-top ul').stop().animate({
               "top": lt_a += lt_b
-          }, 700, function () {
+          }, 950, function () {
               // d = false;
           });
 
           $('.left-bottom ul').stop().animate({
               "top": lb_a += lb_b
-          }, 700, function () {
+          }, 1050, function () {
               // d = false;
           });
 
           $('.right-top ul').stop().animate({
               "top": rt_a += rt_b
-          }, 700, function () {
+          }, 950, function () {
               // d = false;
           });
 
           $('.right-bottom ul').stop().animate({
               "top": rb_a += rb_b
-          }, 700, function () {
+          }, 1050, function () {
               d = false;
           });
       };

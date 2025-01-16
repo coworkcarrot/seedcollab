@@ -45,7 +45,6 @@ img {
 
 /* 네비게이션 바 */
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -88,6 +87,7 @@ nav .nav-menu ul.menu-link > li > a {
   position: relative;
   display: inline-block;
   margin: 0 60px;
+  font-size: 0.9rem;
 }
 nav ul.menu-link > li > a:hover {
   text-decoration: none;
@@ -499,4 +499,4 @@ footer .footer-nav .f-nav ul li {
   display: none;
 }
 
-/*# sourceMappingURL=index-register-userinfo.css.map *//*# sourceMappingURL=index-register-userinfo.css.map */
+/*# sourceMappingURL=index-register-userinfo.css.map */

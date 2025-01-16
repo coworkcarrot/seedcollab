@@ -23,9 +23,11 @@ $(function () {
 
   $('#protect .protect-page > ul:nth-of-type(1)').click(function () {
       $('#dogpopup1').css('display', 'block');
+      $('#dogpopup2').css('display', 'none');
   }); //첫번째 ul(박스 누르면) 첫번째 팝업창 block
   $('#protect .protect-page > ul:nth-of-type(2)').click(function () {
       $('#dogpopup2').css('display', 'block');
+      $('#dogpopup1').css('display', 'none');
   }); //두번째 ul(박스 누르면) 두번째 팝업창 block
   
 

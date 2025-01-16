@@ -39,7 +39,7 @@ $(function () {
           d = true;
           $('.center ul').stop().animate({
               "top": a += -b
-          }, 300, function () {
+          }, 500, function () {
               // d = false;
           });
 
@@ -75,7 +75,7 @@ $(function () {
           d = true;
           $('.center ul').stop().animate({
               "top": a += b
-          }, 300, function () {
+          }, 500, function () {
               // d = false;
           });
 

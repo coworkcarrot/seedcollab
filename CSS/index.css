@@ -370,6 +370,7 @@ nav ul.menu-link > li > a:hover:after {
   margin: 0 3rem;
   overflow: hidden;
   border-radius: 20px;
+  box-shadow: 0px 10px 10px #ccc;
   /* background: red; */
 }
 #page-2.left-top, #page-2.left-bottom, #page-2.center-box, #page-2.right-top, #page-2.right-bottom {
@@ -394,18 +395,6 @@ nav ul.menu-link > li > a:hover:after {
   height: 400px;
   /* float: left; */
   border-radius: 20px;
-}
-#page-2 .center-box .box1 {
-  background-color: #b3c4f8;
-}
-#page-2 .center-box .box2 {
-  background-color: #f8bfb4;
-}
-#page-2 .center-box .box3 {
-  background-color: #b4f8b6;
-}
-#page-2 .center-box .box4 {
-  background-color: #f8b4f6;
 }
 #page-2 .right ul {
   position: absolute;
